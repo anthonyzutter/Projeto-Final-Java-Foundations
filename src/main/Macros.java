@@ -47,14 +47,12 @@ public class Macros {
     }
 
     public void escolherPorcentagemMacros(int escolha) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("1 - Usar porcentagem de macros padrão \n" +
-                "2 - Personalizar porcentagem de macros");
         switch (escolha) {
             case 1:
                 System.out.println("Macros padrão: 20% Proteina, 50% Carboidrato, 30% Gordura");
                 break;
             case 2:
+                Scanner s = new Scanner(System.in);
                 System.out.println("Digite a porcentagem de proteina: ");
                 double proteina = s.nextDouble() / 100;
                 System.out.println("Digite a porcentagem de carboidrato: ");

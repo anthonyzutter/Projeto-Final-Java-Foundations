@@ -13,6 +13,16 @@ public class Pessoa {
     double bmr;
     double tdee;
 
+    public Pessoa(String nome, char sexo, String objetivo, int idade, int altura, double peso, int atividade) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.objetivo = objetivo;
+        this.idade = idade;
+        this.altura = altura;
+        this.peso = peso;
+        this.atividade = atividade;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -69,7 +79,7 @@ public class Pessoa {
         this.peso = peso;
     }
 
-    public void printNivelDeAtividade() {
+    public static void printNivelDeAtividade() {
         System.out.println("Nivel de atividade: \n" +
                 "1 - Sedentario(Não faz exercício físico) \n" +
                 "2 - Pouco ativo(Exercício 1-2 dias na semana) \n" +
